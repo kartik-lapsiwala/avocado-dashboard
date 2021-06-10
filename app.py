@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv("/Users/user/Desktop/python_stuff/dashboard/Experiments/avocado_analytics/avocado.csv")
+data = pd.read_csv("./avocado.csv")
 data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
 data.sort_values("Date", inplace=True)
 external_stylesheets = [{
