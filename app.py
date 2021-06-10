@@ -14,6 +14,8 @@ external_stylesheets = [{
                         "rel": "stylesheet"}]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+#to deploy our app on heroku using gunicorn
 server = app.server
 app.title = "Avocado Analytics: Understand Your Avocados!"
 
